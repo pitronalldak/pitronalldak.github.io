@@ -12,13 +12,13 @@
   list-style-type: none;
 
   @media (min-width: $mq-md) {
-    padding-left: 12em;
-    padding-right: 12em;
+    padding-left: 4em;
+    padding-right: 4em;
   }
 
   @media (min-width: $mq-xxl) {
-    padding-left: 15em;
-    padding-right: 15em;
+    padding-left: 5em;
+    padding-right: 5em;
   }
 
   ul {

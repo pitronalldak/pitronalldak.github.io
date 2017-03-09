@@ -25,23 +25,24 @@ var Tabs = (function() {
 
     click: function() {
       if (s.tabs.length) {
-        var currentIdx = 0,
-            prevIdx = currentIdx;
+        // var currentIdx = 0,
+        //     prevIdx = currentIdx;
 
         [].forEach.call(s.tabs, function(tab, idx) {
           tab.addEventListener('click', function() {
             debugger
-            prevIdx = currentIdx;
-            currentIdx = idx;
+            // prevIdx = currentIdx;
+            // currentIdx = idx;
 
-            if (prevIdx !== currentIdx) {
-              s.tab[prevIdx].style.display = 'none';
-              s.tab[prevIdx].classList.remove('active');
-              s.tabs[prevIdx].classList.remove('active');
-              s.tab[currentIdx].style.display = 'block';
-              s.tab[currentIdx].classList.add('active');
-              s.tabs[currentIdx].classList.add('active');
-            }
+              s.tab[idx].style.display = 'block';
+              s.tab[idx].classList.add('active');
+              s.tabs[idx].classList.add('active');
+              s.tab[idx + 1].style.display = 'none';
+              s.tab[idx + 1].classList.remove('active');
+              s.tabs[idx + 1].classList.remove('active');
+              s.tab[idx - 1].style.display = 'none';
+              s.tab[idx - 1].classList.remove('active');
+              s.tabs[idx - 1].classList.remove('active');
           });
         });
       }

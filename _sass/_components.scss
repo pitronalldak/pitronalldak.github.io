@@ -48,9 +48,16 @@
   ul {
     list-style-type: none;
   }
-  .technologies {
-    padding: 1em;
-    display: inline-block;
+  & technologies {
+    padding: 5em;
+    .technologies-panel {
+      padding: 1.5em;
+      display: inline-block;
+      img {
+        width: 120px;
+        height: 60px;
+      }
+    }
   }
 }
 

@@ -265,6 +265,7 @@
   justify-content: space-between;
   padding-left: 2em;
   padding-right: 2em;
+  float: right;
 
   @media (min-width: $mq-sm) {
     flex-direction: row;

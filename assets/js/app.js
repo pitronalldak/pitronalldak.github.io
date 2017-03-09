@@ -30,6 +30,7 @@ var Tabs = (function() {
 
         [].forEach.call(s.tabs, function(tab, idx) {
           tab.addEventListener('click', function() {
+            debugger
             prevIdx = currentIdx;
             currentIdx = idx;
 

@@ -8,7 +8,7 @@ $font-post: 'Lora', serif;
 $color-alpha: #9f8f68;
 $color-alpha--light: #f5f3ef;
 
-$color-black: #0a0a0a;
+$color-black: #222222;
 $color-grey: #f8f9f9;
 $color-white: #fff;
 
@@ -31,6 +31,7 @@ body {
   font-feature-settings: 'liga' 0;
   font-size: 100%;
   line-height: 1.6;
+  background-color: $color-black;
 
   @media (min-width: $mq-xs) {
     font-size: 102.5%;

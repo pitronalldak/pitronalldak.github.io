@@ -2,155 +2,18 @@
 layout: default
 ---
 <section class="previews">
+  
   <div>
-    {% for post in paginator.posts %}
-      <figure class="absolute-bg preview__img" style="background-image: url('{{ post.image }}');"></figure>
-    {% endfor %}
-    <div class="previews__container">
-      <span>Welcome to</span>
-      <h1>{{ site.title }}</h1>
-      <span>Best solution for your ideas</span>
+
+    <div class="pacman-holder moving">
+        <div class="pacman-container">
+            <div class="pacman-body"></div>
+            <div class="pacman-mouth"><div class="pacman"></div></div>
+        </div>
+        
+        <div class="dot"></div>
     </div>
-  </div>
-
-  <div>
-    <header>
-      <ul class="tabs">
-        <li class="tabs__item">Tools</li>
-        <li class="tabs__item">Portfolio</li>
-        <li class="tabs__item">Contributions</li>
-      </ul>
-    </header>
-
-    <div class="tab technologies" id="technologies">
-      <div class="technology-panel">
-          <a target="_blank" href="https://facebook.github.io/react/">
-              <img src="http://react-etc.net/files/2016-07/logo-578x270.png" alt="ReactJS"/>
-          </a>
-      </div>
-      <div class="technology-panel">
-          <a target="_blank" href="https://angular.io/">
-             <img src="https://angular.io/resources/images/logos/standard/logo-nav@2x.png" alt="Angular"/>
-        </a>
-      </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://vuejs.org/">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr06A8FM_2vhcKgvWQF5IDMgnCasJsBD2BROMrM1axf9ACj3N2" alt="VueJS"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://camo.githubusercontent.com/11e7cfd04eceb1ea7464e99edda0e7000487f343/68747470733a2f2f656c656374726f6e2e61746f6d2e696f2f696d616765732f656c656374726f6e2d6c6f676f2e737667" alt="Electron"/>
-            </a>
-        </div>
-
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://cloud.githubusercontent.com/assets/1254431/5421348/11a5e4d8-825a-11e4-903e-476a204cecb0.png" alt="TypeScript"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://tiv.space/media/uploads/2016/02/25/python-logo-long.png" alt="Python"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://hackerlists.com/wp-content/uploads/2016/06/golang.jpg" alt="Go"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://cdn-images-1.medium.com/max/800/1*QcqM0XuSFG0dD28i5pLJ3A.png" alt="Scala"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://raygun.com/blog/wp-content/uploads/2016/05/nodejs-logo.png" alt="NodeJS"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://foodpanda.io/wp-content/uploads/sites/11/2016/11/Elasticsearch-Logo-Color-H.jpg-1024x273.png" alt="Elasticsearch"/>
-            </a>
-        </div>
-
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://1.bp.blogspot.com/-YIfQT6q8ZM4/Vzyq5z1B8HI/AAAAAAAAAAc/UmWSSMLKtKgtH7CACElUp12zXkrPK5UoACLcB/s1600/image00.png" alt="Firebase"/>
-            </a>
-        </div>
-
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://dokkur.com/assets/images/docs_screens/telegram.png" alt="Telegram"/>
-            </a>
-        </div>
-
-
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/800px-MongoDB-Logo.svg.png" alt="MongoDb"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1280px-Redis_Logo.svg.png" alt="Redis"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://www.computersnyou.com/wp-content/uploads/2014/12/postgresql-logo.png" alt="PostgreSQL"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/640px-MySQL.svg.png" alt="MySQL"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/2000px-AmazonWebservices_Logo.svg.png" alt="Aws"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://www.digitalocean.com/assets/media/logos-badges/png/DO_Logo_Horizontal_Blue-3db19536.png" alt="Digital Ocean"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://upload.wikimedia.org/wikipedia/en/archive/a/a9/20161027174404!Heroku_logo.png" alt="Heroku"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Docker_(container_engine)_logo.png" alt="Docker"/>
-            </a>
-        </div>
-
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="http://2.bp.blogspot.com/-LsTUY3Jl4dk/VOzAZr36EhI/AAAAAAAAF-c/vcI4poZvNgQ/s1600/Jenkins_Logo.png" alt="Jenkins"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://crossbrowsertesting.com/design/images/github-logo.png" alt="Github"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://www.atlassian.com/dam/jcr:e2a6f06f-b3d5-4002-aed3-73539c56a2eb/bitbucket_rgb_blue.png" alt="Bitbucket"/>
-            </a>
-        </div>
-        <div class="technology-panel">
-            <a target="_blank" href="https://nodejs.org/en/">
-                <img src="https://forger.typo3.org/images/slack.svg" alt="Slack"/>
-            </a>
-        </div>
-    </div>
-
+    
     {% include archive-link.html %}
 
   </div>
